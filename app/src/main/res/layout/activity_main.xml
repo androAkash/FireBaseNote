@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MainActivity"
+    android:background="#efeeee">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EFEEEE"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <soup.neumorphism.NeumorphTextView
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Firebase Notes App"
+            android:textSize="35sp"
+            android:textColor="@color/black"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:src="@drawable/ic_edit"
+        android:id="@+id/btn_add_notes"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="22dp"
+        android:text="Add Notes"
+        app:layout_constraintBottom_toTopOf="@+id/btn_show_notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.806" />
+
+    <soup.neumorphism.NeumorphFloatingActionButton
+        style="@style/Widget.Neumorph.FloatingActionButton"
+        android:id="@+id/btn_show_notes"
+        android:src="@drawable/ic_list"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="12dp"
+        android:text="See All Notes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
